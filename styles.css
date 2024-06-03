@@ -1,0 +1,206 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    background-color: rgb(255, 226, 230);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.125em;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60em;
+    justify-content: space-between;
+}
+
+.index {
+    animation: fadeIn 3s;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.tlayuda-desc {
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    width: 80%;
+    margin-left: 9%;
+}
+
+.desc-text {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.notIndex { 
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    animation: slide-in 1s ease-out;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    color: darkred;
+}
+
+h2, h3 {
+    font-family: "Roboto", sans-serif;
+    color: darkblue;
+}
+
+p, ul, ol, nav {
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    color: black;
+}
+
+a {
+    color: darkred;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    position: sticky;
+    bottom: 1em;
+    width: 100%;
+    background-color: rgb(255, 186, 186);
+    padding: 0.3125em;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.nutrient-table {
+    padding-bottom: 1em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    background-color: rgb(250, 194, 201);
+    border-radius: 1em;
+}
+
+.lname-fname {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5em;
+}
+
+.form {
+    animation: slide-up 1s ease-in-out;
+    padding-top: 17%;
+    padding-left: 23.5%;
+    width: 50%
+}
+
+.submit {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1em;
+    padding-left: 25%;
+    width: 50%;
+}
+
+button {
+    width: 6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .625em 1.25em;
+    background-color: blanchedalmond;  
+}
+
+button:hover {
+    background-color: azure;
+}
+
+
+  
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }    
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(220, 185, 185);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+table {
+    width: 30em;
+    margin: 1em;
+}
+
+@media screen and (max-width: 786px) {
+    .tlayuda-desc {
+        flex-direction: column;
+        margin-left: 6%;
+    }
+
+    .form {
+        width: 97%;
+        padding-left: 0%;
+        padding-top: 25%;
+    }
+
+    .notIndex img {
+        width: 80%;
+    }
+
+    table {
+        width: 15em;
+    }
+
+    .lname-fname {
+        padding-right: 0;
+    }
+
+}
