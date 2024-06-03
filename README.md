@@ -24,6 +24,7 @@ Through this project, I gained hands-on experience with several web development 
 - `directions.html` - Provides step-by-step cooking instructions.
 - `form.html` - Contains a form allowing visitors to send messages or inquiries.
 - `styles.css` - The stylesheet that defines the visual appearance of all the pages.
+- 'images' - a folder containign all images used for this project.
 
 ## How to Use
 To view the website, simply clone this repository and open the `index.html` file in any modern web browser.
